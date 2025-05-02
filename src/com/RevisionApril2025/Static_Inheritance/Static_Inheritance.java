@@ -30,7 +30,8 @@ package com.RevisionApril2025.Static_Inheritance;
 // But in case of Method-Hiding, "which function to call/invoke" depends on the type of the "Reference" and
 // takes place at Compile-Time.
 
-// In Java, Fields (Both Static and Non-Static) and Methods (Static) are resolved at Compile-Time.
+// In Java, Fields (Both Static and Non-Static) and Methods (Static) are resolved at Compile-Time depending on
+// the type of "Reference".
 
 public class Static_Inheritance
 {
