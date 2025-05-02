@@ -30,7 +30,7 @@ package com.RevisionApril2025.Static_Inheritance;
 // But in case of Method-Hiding, "which function to call/invoke" depends on the type of the "Reference" and
 // takes place at Compile-Time.
 
-// In Java, Fields (Both Static and Non-Static) and Methods (Static) are resolved at Compile-Time depending on
+// In Java, Fields (Both Static and Non-Static) and Methods (Static) are resolved at Compile-Time based on
 // the type of "Reference".
 
 public class Static_Inheritance
@@ -39,24 +39,29 @@ public class Static_Inheritance
     {
         A obj1 = new B();
 
+        // show() method is overridden because it is non-static. Depends on the "Instance" type.
         obj1.show();
 
         System.out.println();
 
+        // config() method is not overridden (just hidden) because it is static. Depends on the "Reference" type.
         A.config();
         obj1.config();
 
         System.out.println();
 
+        // Instance variables are not overridden just hidden. Depend on the "Reference" type.
         System.out.println("obj1.x: " + obj1.x);
 
         System.out.println();
 
+        // Static fields are not overridden just hidden. Depend on the "Reference" type.
         System.out.println("A.name: " + A.name);
         System.out.println("obj1.name: " + obj1.name);
 
         System.out.println();
 
+        // Present only in the parent class. Also depends on the "Reference" type.
         System.out.println("A.y: " + A.y);
         System.out.println("obj1.y: " + obj1.y);
 
