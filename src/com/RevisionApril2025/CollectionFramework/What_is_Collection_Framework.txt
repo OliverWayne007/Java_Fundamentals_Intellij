@@ -1,0 +1,17 @@
+Question: What is Collection in Java ?
+
+Ans: A Collection is simply an object that represents a group of objects, known as its elements.
+
+Question: What is Collection Framework ?
+
+Ans: Collection Framework is a set of Classes and Interfaces that help in managing the Collections.
+
+Question: What is the Collection Interface ?
+
+Ans: Collection Interface is the root interface of the Java Collection Framework. It is the most basic interface
+     that defines a group of objects known as elements. The Collection Interface is a part of java.util package.
+     and it is a parent interface that is extended by other Collection interfaces like List , Set and Queue.
+     The Collection interface extends the Iterable interface which allows the traversal of the Collection objects.
+     The Collection interface defines a set of core methods that are implemented by all classes that implement
+     the Collection Interface. These methods allow for basic operations such as adding, removing and checking the
+     existence of elements in a Collection.
